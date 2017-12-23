@@ -23,7 +23,7 @@ function installToMediaWikiRoot {
 		composer require 'mediawiki/semantic-scribunto='$SSC --update-with-dependencies
 	else
 		composer init --stability dev
-		composer require mediawiki/scribunto "dev-master" --dev --update-with-dependencies
+		composer require mediawiki/scribunto 'dev-'$MW --dev --update-with-dependencies
 		composer require mediawiki/semantic-scribunto "dev-master" --dev --update-with-dependencies
 
 		cd extensions
